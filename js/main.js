@@ -17,31 +17,29 @@
 
 
 
-    document.getElementById("contactForm").addEventListener("submit", function(event) {
-        event.preventDefault(); // Prevent page reload
+    // document.getElementById("contactForm").addEventListener("submit", function(event) {
+    //     event.preventDefault(); // Prevent page reload
 
-        let name = document.getElementById("name").value;
-        let email = document.getElementById("email").value;
-        let contact = document.getElementById("contact").value;
-        let message = document.getElementById("message").value;
+    //     let name = document.getElementById("name").value;
+    //     let email = document.getElementById("email").value;
+    //     let contact = document.getElementById("contact").value;
+    //     let message = document.getElementById("message").value;
 
-        debugger;
-        Email.send({
-            SecureToken: "85ad1da2-9dbb-48c7-8978-71acf59bfe74", // Get this from https://smtpjs.com/
-            To: "faiq3265@gmail.com",  // Static recipient email
-            From: "faiq3265@gmail.com",  // Your verified sender email
-            Subject: `Contact Form Submission from ${name}`,
-            Body: `Name: ${name}<br>Email: ${email}<br>Contact: ${contact}<br>Message: ${message}`
-        }).then(response => {
-            debugger;
-            if (response === "OK") {
-                document.getElementById("responseMessage").innerText = "Email sent successfully!";
-                document.getElementById("contactForm").reset();
-            } else {
-                document.getElementById("responseMessage").innerText = "Error sending email. Try again.";
-            }
-        });
-    });
+    //     Email.send({
+    //         SecureToken: "85ad1da2-9dbb-48c7-8978-71acf59bfe74", // Get this from https://smtpjs.com/
+    //         To: "faiq3265@gmail.com",  // Static recipient email
+    //         From: "faiq3265@gmail.com",  // Your verified sender email
+    //         Subject: `Contact Form Submission from ${name}`,
+    //         Body: `Name: ${name}<br>Email: ${email}<br>Contact: ${contact}<br>Message: ${message}`
+    //     }).then(response => {
+    //         if (response === "OK") {
+    //             document.getElementById("responseMessage").innerText = "Email sent successfully!";
+    //             document.getElementById("contactForm").reset();
+    //         } else {
+    //             document.getElementById("responseMessage").innerText = "Error sending email. Try again.";
+    //         }
+    //     });
+    // });
 
     // Fixed Navbar
     $(window).scroll(function () {

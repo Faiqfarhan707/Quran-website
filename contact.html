@@ -153,7 +153,8 @@
         </div>
         <div class="row justify-content-center">
             <div class="col-lg-6">
-                <form action="https://formspree.io/f/xeoepkle" method="POST">
+                <!-- <form action="https://formsubmit.co/c6c241d92a1167632fb11c1dedc1de65 " method="POST"> -->
+                <form onsubmit="sendEmail(); reset(); return false;"> 
                     <div class="mb-3">
                         <label class="form-label">Name *</label>
                         <input type="text" class="form-control" required>
@@ -265,34 +266,32 @@
         <script src="lib/owlcarousel/owl.carousel.min.js"></script>
 
         <!-- Template Javascript -->
-        <script src="js/main.js">
-
-        //     document.getElementById("contactForm").addEventListener("submit", function(event) {
-        //     event.preventDefault(); // Prevent page reload
- 
-        //     let name = document.getElementById("name").value;
-        //     let email = document.getElementById("email").value;
-        //     let contact = document.getElementById("contact").value;
-        //     let message = document.getElementById("message").value;
-
-        //     Email.send({
-        //         SecureToken: "C973D7AD-F097-4B95-91F4-40ABC5567812", // Get this from https://smtpjs.com/
-        //         To: "faiq3265@gmail.com",  // Static recipient email
-        //         From: "Uzair@lntechnologies.com",  // Your verified sender email
-        //         Subject: `Contact Form Submission from ${name}`,
-        //         Body: `Name: ${name}<br>Email: ${email}<br>Contact: ${contact}<br>Message: ${message}`
-        //     }).then(response => {
-        //         debugger;
-        //         if (response === "OK") {
-        //             document.getElementById("responseMessage").innerText = "Email sent successfully!";
-        //             document.getElementById("contactForm").reset();
-        //         } else {
-        //             document.getElementById("responseMessage").innerText = "Error sending email. Try again.";
-        //         }
-        //     });
-        // });
-
-        </script>
+        <script src="js/main.js">  </script>
+        
+    <script src=" https://smtpjs.com/v3/smtp.js"></script>
+    <script> 
+        function sendEmail() {
+            try {
+                
+                Email.send({
+                Host : "smtp.gmail.com",
+                Username : "info.equranicwisdom@gmail.com",
+                    Password : "E-quranicwisdom786",
+                    To : 'faiq3265@gmail.com',
+                    From : "documet.getElementById('email').value",
+                    Subject : "This is the subject",
+                    Body : "Name:" + documet.getElementById('name').value + 
+                    "<br> Email:" + documet.getElementById('email').value +
+                    "<br> Phone:" + documet.getElementById('phone').value +
+                    "<br> Message:" + documet.getElementById('message').value
+                }).then(
+                message => alert("message sent successfully")
+                );
+            } catch (error) {
+                alert("message not sent");
+            }    
+        }
+    </script>
     </body>
 
 </html>
