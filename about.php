@@ -1,97 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-
-    <head>
-        <meta charset="utf-8">
-        <title>E-Quranic Wisdom</title>
-        <meta content="width=device-width, initial-scale=1.0" name="viewport">
-        <meta content="" name="keywords">
-        <meta content="" name="description">
-
-        <!-- Google Web Fonts -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Pacifico&display=swap" rel="stylesheet">
-
-        <!-- Icon Font Stylesheet -->
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
-
-        <!-- Libraries Stylesheet -->
-        <link href="lib/animate/animate.min.css" rel="stylesheet">
-        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-
-        <!-- Customized Bootstrap Stylesheet -->
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-
-        <!-- Template Stylesheet -->
-        <link href="css/style.css" rel="stylesheet">
-
-        
-
-    </head>
-
-    <body>
-
-        <!-- Spinner Start -->
-        <div id="spinner" class="show w-100 vh-100 bg-white position-fixed translate-middle top-50 start-50  d-flex align-items-center justify-content-center">
-            <div class="spinner-grow text-primary" role="status"></div>
-        </div>
-        <!-- Spinner End -->
-
-
-        <!-- Topbar start -->
-        <div class="container-fluid fixed-top">
-            <div class="container topbar d-none d-lg-block">
-                <div class="topbar-inner">
-                    <div class="row gx-0">
-                        <div class="col-lg-7 text-start">
-                            <div class="h-100 d-inline-flex align-items-center me-4">
-                                <span class="fa fa-phone-alt me-2 text-dark"></span>
-                                <a href="#" class="text-secondary"><span>+92 312 8691405</span></a>
-                            </div>
-                            <div class="h-100 d-inline-flex align-items-center">
-                                <span class="far fa-envelope me-2 text-dark"></span>
-                                <a href="#" class="text-secondary"><span>info@example.com</span></a>
-                            </div>
-                        </div>
-                        <div class="col-lg-5 text-end">
-                            <div class="h-100 d-inline-flex align-items-center">
-                                <span class="text-body">Follow Us:</span>
-                                <a class="text-dark px-2" href=""><i class="fab fa-facebook-f"></i></a>
-                                <!-- <a class="text-dark px-2" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="text-dark px-2" href=""><i class="fab fa-linkedin-in"></i></a> -->
-                                <a class="text-dark px-2" href=""><i class="fab fa-instagram"></i></a>
-                                <!-- <a class="text-body ps-4" href=""><i class="fa fa-lock text-dark me-1"></i></a> -->
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <nav class="navbar navbar-light navbar-expand-lg py-3">
-                    <a href="index.html" class="navbar-brand">
-                        <h1 class="mb-0">E-Quranic<span class="text-primary">Wisdom</span> </h1>
-                    </a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                        <span class="fa fa-bars text-primary"></span>
-                    </button>
-                    <div class="collapse navbar-collapse bg-white" id="navbarCollapse">
-                        <div class="navbar-nav ms-lg-auto mx-xl-auto">
-                            <a href="index.html" class="nav-item nav-link">Home</a>
-                            <a href="about.html" class="nav-item nav-link active">About</a>
-                            <a href="Learn.html" class="nav-item nav-link">About Islam</a>
-                            <div class="nav-item dropdown">
-                            </div>
-                            <a href="contact.html" class="nav-item nav-link">Contact</a>
-                        </div>
-                        <!-- <a href="" class="btn btn-primary py-2 px-4 d-none d-xl-inline-block">Donate</a> -->
-                    </div>
-                </nav>
-            </div>
-        </div>
-        <!-- Topbar End -->
-
+<?php include 'header.php'; ?>
 
         <!-- Hero Start -->
         <div class="container-fluid hero-header">
@@ -100,7 +7,8 @@
                     <div class="col-lg-7">
                         <div class="hero-header-inner animated zoomIn">
                             <h1 class="display-1 text-dark">About Us</h1>
-                            <p class="fs-4 text-dark">We are a passionate team dedicated to providing seamless communication solutions through modern technology, ensuring that every interaction is efficient, secure, and user-friendly.</p>
+                            <p class="fs-4 text-dark">We are dedicated to providing exceptional online tutoring services that cater to the diverse needs of students worldwide. By leveraging technology and expertise, we empower students to reach their full potential. Our platform is designed to facilitate collaboration, creativity, and critical thinking.
+                            </p>
                             <hr>
                             <ol class="breadcrumb mb-0">
                                 <li class="breadcrumb-item"><a href="#">Home</a></li>
@@ -302,71 +210,4 @@
 </div>
 <!-- About Us Page End -->
 
-
-        <!-- Footer Start -->
-<div class="container-fluid footer pt-5 wow fadeIn" data-wow-delay="0.1s" style="background: #111; color: #fff;">
-    <div class="container py-5">
-        <div class="row py-4">
-            <div class="col-12">
-                <div class="border-top border-secondary"></div>
-            </div>
-        </div>
-        <div class="row g-4 footer-inner">
-            <div class="col-md-6 col-lg-6 col-xl-4">
-                <div class="footer-item mt-5">
-                    <h4 class="text-light mb-4">E-Quranic Wisdom</h4>
-                    <p class="mb-4 text-secondary">Empowering students worldwide with interactive and comprehensive Quranic learning.</p>
-                    <a href="" class="btn btn-outline-light py-2 px-4 rounded-pill">Join Us</a>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-6 col-xl-4">
-                <div class="footer-item mt-5">
-                    <h4 class="text-light mb-4">Quick Links</h4>
-                    <ul class="list-unstyled">
-                        <li><a class="text-secondary" href=""><i class="fa fa-chevron-right me-2"></i>Home</a></li>
-                        <li><a class="text-secondary" href=""><i class="fa fa-chevron-right me-2"></i>About Us</a></li>
-                        <li><a class="text-secondary" href=""><i class="fa fa-chevron-right me-2"></i>Our Courses</a></li>
-                        <li><a class="text-secondary" href=""><i class="fa fa-chevron-right me-2"></i>Contact Us</a></li>
-                        <li><a class="text-secondary" href=""><i class="fa fa-chevron-right me-2"></i>Blog</a></li>
-                        <li><a class="text-secondary" href=""><i class="fa fa-chevron-right me-2"></i>Donate</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-6 col-xl-4">
-                <div class="footer-item mt-5">
-                    <h4 class="text-light mb-4">Contact Us</h4>
-                    <ul class="list-unstyled">
-                        <li><i class="fa fa-map-marker-alt me-2 text-primary"></i> 123 Street, City, Country</li>
-                        <li class="mt-3"><i class="fa fa-phone-alt me-2 text-primary"></i> +92 312 8691405</li>
-                        <li class="mt-3"><i class="fa fa-envelope me-2 text-primary"></i> info@equranicwisdom.com</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="container py-4 text-center">
-        <div class="border-top border-secondary pb-3"></div>
-        <p class="mb-0">&copy; <a class="text-light border-bottom" href="#">E-Quranic Wisdom</a>, All Rights Reserved.</p>
-        <p class="mt-2">Designed by <a class="text-light border-bottom" href="">Faiq Farhan</a></p>
-    </div>
-</div>
-<!-- Footer End -->
-
-
-        <!-- Back to Top -->
-        <a href="#" class="btn btn-primary border-3 border-light back-to-top"><i class="fa fa-arrow-up"></i></a>   
-
-        
-        <!-- JavaScript Libraries -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="lib/wow/wow.min.js"></script>
-        <script src="lib/easing/easing.min.js"></script>
-        <script src="lib/waypoints/waypoints.min.js"></script>
-        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-
-        <!-- Template Javascript -->
-        <script src="js/main.js"></script>
-    </body>
-
-</html>
+<?php include 'footer.php'; ?>
